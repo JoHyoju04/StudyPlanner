@@ -2,13 +2,14 @@
 나만의 스터디 플래너로 공부목적으로 일정관리 및 확인할 수 있는 애플리케이션입니다.
 
 # Usage example
-1.![image](https://user-images.githubusercontent.com/47858282/72673762-19d1f000-3ab2-11ea-91d2-cbcb182e97f8.png)
+1. ![image](https://user-images.githubusercontent.com/47858282/72673762-19d1f000-3ab2-11ea-91d2-cbcb182e97f8.png)
+⋅⋅⋅activity_main.xml파일의 메인화면이다. 오늘할일을 입력 및 저장하고 이번달, 이번주 목표를 확인할 수 있는 화면입니다.
 
-2.![image](https://user-images.githubusercontent.com/47858282/72673991-df1d8700-3ab4-11ea-89a3-f0e5c17292fe.png)
+2. ![image](https://user-images.githubusercontent.com/47858282/72673991-df1d8700-3ab4-11ea-89a3-f0e5c17292fe.png)
 
-3.![image](https://user-images.githubusercontent.com/47858282/72673999-eba1df80-3ab4-11ea-8242-faf325c1fd1b.png)
+3. ![image](https://user-images.githubusercontent.com/47858282/72673999-eba1df80-3ab4-11ea-8242-faf325c1fd1b.png)
 
-4.![image](https://user-images.githubusercontent.com/47858282/72674003-f492b100-3ab4-11ea-9d66-4747541452af.png)
+4. ![image](https://user-images.githubusercontent.com/47858282/72674003-f492b100-3ab4-11ea-9d66-4747541452af.png)
 
 
 
