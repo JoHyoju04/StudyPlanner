@@ -28,10 +28,14 @@ import java.util.Calendar;
 
 @SuppressWarnings("deprecation")
 public class MainActivity extends AppCompatActivity {
+    //위젯에 대응할 위젯 변수 선언
     DatePicker dp;
     EditText edtDiary1,edtDiary2,edtDiary3,edtDiary4,dlgMonth,dlgWeek;
     Button btnWrite,btnCheck;
-    String fileName1,fileName2,fileName3,fileName4;
+    
+    //파일이름을 지정할 문자열 변수
+    String fileName1,fileName2,fileName3,fileName4; 
+    
     int cMonth,cYear,cDay;
     View dialogView;
     TextView tvWeek,tvMonth;
@@ -58,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         tvMonth=(TextView)findViewById(R.id.tvMonth);
         tvWeek=(TextView)findViewById(R.id.tvWeek);
 
-
+        //데이트피커의 해당되는 날짜로 파일이름 저장
         dp.init(cYear, cMonth, cDay, new DatePicker.OnDateChangedListener() {
             @Override
             public void onDateChanged(DatePicker datePicker, int year, int monthOfYear, int dayOfMonth) {
@@ -79,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 btnWrite.setEnabled(true);
             }
         });
+        //SAVE 버튼클릭했을 때 
         btnWrite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //CHECK버튼 클릭했을 때
         btnCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -124,6 +130,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 }
+    
+    //파일을 읽어 내용을 반환하는 메소드
     String readDiary(String fName){
         String diaryStr=null;
         FileInputStream inFs;
@@ -144,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
         return diaryStr;
     }
 
+    //오른쪽 상단 메뉴 파일 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
@@ -153,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //오른쪽 상단 메뉴를 클릭했을 때 동작할 메소드
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
