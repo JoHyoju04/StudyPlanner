@@ -1,3 +1,4 @@
+//메인화면에서 CHECK버튼을 눌렀을 경우
 package com.example.sksms.project20172183;
 
 import android.app.Activity;
@@ -39,6 +40,7 @@ public class check_list extends MainActivity {
         box3.setText(check3);
         box4.setText(check4);
 
+        //RatingBar를 눌렀을때 Toast메세지 출력하기
         star.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
