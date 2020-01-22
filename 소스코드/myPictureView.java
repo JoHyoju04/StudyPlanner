@@ -1,3 +1,4 @@
+//메뉴에서 공부명언을 선택했을 경우
 package com.example.sksms.project20172183;
 
 import android.content.Context;
@@ -8,11 +9,14 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
+//커스텀위젯 설정
 public class myPictureView extends View {
     String imagePath=null;
     public myPictureView(Context context, @Nullable AttributeSet attrs){
         super(context,attrs);
     }
+    
+    //캔버스에 SD카드의 이미지 파일을 보여주기 위한 메소드
     @Override
     protected void onDraw(Canvas canvas){
         super.onDraw(canvas);
