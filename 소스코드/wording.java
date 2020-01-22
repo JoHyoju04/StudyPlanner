@@ -1,3 +1,4 @@
+//메뉴에서 공부명언을 선택했을 경우
 package com.example.sksms.project20172183;
 
 import android.Manifest;
@@ -35,6 +36,8 @@ public class wording extends Activity {
         imageFiles=new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/Pictures").listFiles();
         imageFname=imageFiles[0].toString();
         myPicture.imagePath=imageFname;
+        
+        //이전 버튼을 선택하였을 경우
         btnPrev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,6 +51,8 @@ public class wording extends Activity {
                 }
             }
         });
+        
+        //다음 버튼을 선택하였을 경우
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,6 +68,7 @@ public class wording extends Activity {
             }
         });
 
+        //돌아가기 버튼을 선택하였을 경우
         btnReturn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
